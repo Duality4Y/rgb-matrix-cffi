@@ -1,4 +1,4 @@
-# rpirgbmatrix-cffi
+# rpi-matrix-cffi
 
 this project creates c bindings with cffi for python using this library: https://github.com/hzeller/rpi-rgb-led-matrix/,<br>
 
