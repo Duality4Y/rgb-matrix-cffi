@@ -14,7 +14,7 @@ for i in range(0, loops):
     col = i
     for y in range(0, h):
         for x in range(0, w):
-            canvas.set_pixel()
+            canvas.set_pixel(x, y, col, 0, 0)
 
 duration = time.time() - start
 
