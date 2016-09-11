@@ -2,6 +2,8 @@
 from rgbmatrix import Canvas
 from rgbmatrix import Matrix
 
+import time
+
 matrix = Matrix(32, 1, 1)
 canvas = Canvas(matrix)
 w, h = canvas.get_size()
