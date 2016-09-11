@@ -13,7 +13,7 @@ clone this repo, enter it and then type:
     git submodule init
     git submodule update
 ```
-enter the matrix folder and comple with make.
+enter the matrix folder and compile:
 ```
     cd matrix/
     make
