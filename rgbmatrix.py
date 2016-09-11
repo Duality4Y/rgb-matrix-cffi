@@ -25,7 +25,7 @@ class Canvas(object):
         self.height_pointer = ffi.new("int *height")
     def get_size(self):
         lib.led_canvas_get_size(self.canvas, self.width_pointer, self.height_pointer)
-	    return (self.width_pointer[0], self.height_pointer[0])
+        return (self.width_pointer[0], self.height_pointer[0])
     def clear(self):
         lib.led_canvas_clear(self.canvas)
     def fill(self, r, g, b):
@@ -41,4 +41,4 @@ class Matrix(object):
     def swap_on_vsync(offscreen_canvas):
         return lib.led_matrix_swap_on_vsync(self.matrix, offscreen_canvas)
     def close(self):
-	    lib.led_matrix_delete(self.matrix)
+        lib.led_matrix_delete(self.matrix)
