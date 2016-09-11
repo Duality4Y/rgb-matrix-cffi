@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import cffi
+import sys
 
 prototypes = ""
 with open('matrix/include/led-matrix-c.h') as f:
@@ -36,6 +37,9 @@ class Canvas(object):
 class Matrix(object):
     def __init__(self, rows, chained, parallel):
         self.matrix = lib.led_matrix_create(rows, chained, parallel)
+        if self.matrix == ffi.NULL:
+            print("Exiting because couldn't initiate matrix.")
+            sys.exit(1)
     def create_offscreen_canvas(self):
         return lib.led_matrix_create_offscreen_canvas(self.matrix)
     def swap_on_vsync(offscreen_canvas):
