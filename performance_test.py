@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from rgbmatrix.py import Canvas
-from rgbmatrix.py import Matrix
+from rgbmatrix import Canvas
+from rgbmatrix import Matrix
 
 matrix = Matrix(32, 1, 1)
 canvas = Canvas(matrix)
