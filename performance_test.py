@@ -7,8 +7,7 @@ import time
 matrix = Matrix(32, 1, 1)
 canvas = Canvas(matrix)
 w, h = canvas.get_size()
-# i think better in powers of two :)
-loops = 2 ** 12 
+loops = 2 ** 12
 start = time.time()
 
 for i in range(0, loops):
